@@ -34,3 +34,21 @@ for (var myName of names) {
 names.sort();
 //6
 console.log(names.join());
+
+
+
+var namesLong = [ 'John', 'Jane', 'Bob',, 'Mike', 'Leonardo'];
+var duljina = 0;
+var najduzeIme = '';
+for (var ime of namesLong ) {
+    if ( typeof ime == 'undefined'){
+        continue;
+    }
+    var duljinaImena=ime.length;
+    if (duljinaImena > duljina) {
+        duljina = duljinaImena;
+        najduzeIme = ime;
+    }
+}
+console.log ('Duljina: ' + duljina)
+console.log ('Najduze ime je: ' + najduzeIme)

@@ -12,6 +12,11 @@ for (i = 0; i< matrix.length; i++){
     console.log(matrix[i].join());
     for (var j=0; j<matrix[i].length; j++){
         console.log(matrix[i][j]);
-        
+
     }
+}
+var myNames = [ 'John', 'Jane',, 'Mike'];
+
+for (var MyName of myNames){
+console.log(MyName);
 }
